@@ -82,7 +82,7 @@ jobs:
       - name: Verify Docker image
         env:
           REGISTRY: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com
-          REPOSITORY: "prime-website"sS
+          REPOSITORY: "prime-website"
           COMMIT_SHA: ${{ github.sha }}
         run: |
           REPOSITORY_URI=$REGISTRY/$REPOSITORY
